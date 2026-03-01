@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ротатор трафика</title>
+</head>
+<body>
+    <script>
+        const offers = [
+            'https://gvvkv.magicgirllhere.net/?utm_source=da57dc555e50572d&ban=other&j1=1&j5=1&s1=15847&s2=2224514&click_id=LBS',
+            'https://smikit.top/click?o=2&a=211&sub_id1=LBS'
+        ];
+        
+        const storageKey = 'offer_rotator_counter';
+        const maxOffers = offers.length;
+
+        let currentIndex = localStorage.getItem(storageKey);
+
+        if (currentIndex === null) {
+            currentIndex = 0;
+        } else {
+            currentIndex = parseInt(currentIndex);
+        }
+
+        let redirectTo = offers[currentIndex];
+        let nextIndex = (currentIndex + 1) % maxOffers;
+        
+        localStorage.setItem(storageKey, nextIndex);
+        window.location.href = redirectTo;
+    </script>
+</body>
+</html>
