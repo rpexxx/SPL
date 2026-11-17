@@ -1,31 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Loading...</title>
+    <meta http-equiv="refresh" content="0; url=https://dgjhfhc.dedatesst.com/s/1a4ca14ae957e?subsource=TW">
 </head>
 <body>
-    <script>
-        const offers = [
-            'https://dgjhfhc.dedatesst.com/s/1a4ca14ae957e?subsource=BI',
-            'https://onenightchick.com/?utm_source=ak5Udq5tP7YCo&utm_campaign=ALL'
-        ];
-        
-        const storageKey = 'offer_rotator_counter';
-        const maxOffers = offers.length;
-
-        let currentIndex = localStorage.getItem(storageKey);
-
-        if (currentIndex === null) {
-            currentIndex = 0;
-        } else {
-            currentIndex = parseInt(currentIndex);
-        }
-
-        let redirectTo = offers[currentIndex];
-        let nextIndex = (currentIndex + 1) % maxOffers;
-        
-        localStorage.setItem(storageKey, nextIndex);
-        window.location.href = redirectTo;
-    </script>
 </body>
 </html>
