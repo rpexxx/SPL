@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Loading...</title>
-    <meta name="referrer" content="no-referrer">
+    <title>Ротатор трафика</title>
 </head>
 <body>
     <script>
@@ -26,8 +25,7 @@
         let nextIndex = (currentIndex + 1) % maxOffers;
         
         localStorage.setItem(storageKey, nextIndex);
-        
-        window.location.replace(redirectTo);
+        window.location.href = redirectTo;
     </script>
 </body>
 </html>
